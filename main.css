@@ -61,7 +61,7 @@ header {
 #welcome {
     width: 100%;
     height: 80vh;
-    background-image: url("/static/image-background.jpg");
+    background-image: url("image-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -311,7 +311,7 @@ button:hover {
 }
 
 #footer {
-    background-image: url(/static/footer-image.jpg);
+    background-image: url("footer-image.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
