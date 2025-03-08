@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>DMS STARA ZAGORA EOOD</title>
+    
+</head>
+<body>
+    <header>
+        <div id="wrapper">
+            <div id="logo-name">
+                <a href="index.html">
+                    <img src="static/DMS6.jpg" class="logo" alt="Logo">
+                </a>
+                <span id="name-to-logo" class="desktop-only">DMS STARA ZAGORA EOOD</span>
+            </div>
+            <div id="menu">
+                <div class="menu-items" id="menu-items">
+                    <a href="#" class="menus">Home</a>
+                    <a href="#about" class="menus">About Us</a>
+                    <a href="#photos" class="menus">Projects</a>
+                    <a href="#contacts" class="menus">Contact</a>
+                </div>
+                <!-- New "English" link with Font Awesome Globe icon -->
+                <div class="language-menu">
+                    <!-- Change href to a real page or action -->
+                    <a href="index.html" class="menus">
+                        <i class="fas fa-globe"></i> Български
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="welcome">
+        <div id="welcome-overlay">
+            <div id="welcome-text-wrapper">
+                <span id="name">DMS STARA ZAGORA EOOD</span>
+                <span id="name-undertext">Delivery and installation of metal constructions with the best conditions and prices</span>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div id="about-content">
+            <div id="about-text">
+                <h1>DMS</h1>
+                <p>
+                    We offer comprehensive solutions for:
+                </p>
+                <ul>
+                    <li>Design, construction, and repair of residential, public, and commercial buildings.</li>
+                    <li>Construction of industrial facilities and installations.</li>
+                    <li>Manufacture of thermopanels and metal constructions, including:</li>
+                    <ul>
+                        <li>Pipelines, silos, and tanks</li>
+                        <li>Screws, halls, houses, and villas</li>
+                        <li>Canopies, awnings, doors, and stairs</li>
+                        <li>Floor structures, ramps, and anchor devices</li>
+                    </ul>
+                </ul>
+            </div>
+            <div id="about-image">
+                <img src="/static/about1.jpg" alt="Project by DMS Stara Zagora">
+            </div>
+        </div>
+    </div>
+    <div id="photos">
+        <div class="image-scroller">
+            <ul>
+                <li><img src="image1.jpg" alt="Project 1" class="zoomable"></li>
+                <li><img src="image2.jpg" alt="Project 2" class="zoomable"></li>
+                <li><img src="image3.jpg" alt="Project 3" class="zoomable"></li>
+                <li><img src="image4.jpg" alt="Project 4" class="zoomable"></li>
+                <li><img src="image5.jpg" alt="Project 5" class="zoomable"></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" src="" alt="Expanded View">
+    </div>
+
+    <div id="contacts">
+        <div id="contacts-wrapper">
+            <div id="contact-text">Contact Us</div>
+            <div id="rhombus">&#9671;</div>
+            <div id="small-text">
+                You can contact us by filling in the information below and clicking the submit button.
+            </div>
+        </div>
+        <div id="form-container">
+            <div id="form-wrapper">
+                <form action="https://formsubmit.co/office.dms.stz@gmail.com" method="POST">
+                    <div id="name-email">
+                        <input id="full-name" type="text" name="name" placeholder="Your Name" required>
+                        <input id="email" type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <textarea id="text-message" name="message" placeholder="Message" maxlength="512" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div id="contact-info">
+                <h3>Contact Information</h3>
+                <p><strong>Email:</strong> <a href="mailto:office.dms.stz@gmail.com">office.dms.stz@gmail.com</a></p>
+                <p><strong>Address:</strong> DMS STARA ZAGORA EOOD, Stara Zagora 6000, Sv. Knyaz Boris Street | 97</p>
+                <p>
+                    <a href="https://www.google.com/maps?q=DMS+STARA+ZAGORA+EOOD,+Stara+Zagora+6000,+Sv.+Knyaz+Boris+97" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="map-link">
+                       📍 View on the map
+                    </a>
+                </p>
+                <p><strong>Phone:</strong> <a href="tel:+359876180505">+359 876 180 505</a></p>
+                <p><strong>Working Hours:</strong> 8:00 AM to 5:00 PM</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer-image-overlay">
+            <div id="footer-content">
+                <div id="footer-info">
+                    <p>&copy; 2024 DMS Stara Zagora EOOD. All rights reserved.</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Address: Stara Zagora 6000, Sv. Knyaz Boris Street | 97</p>
+                    <p><i class="fas fa-phone"></i> Phone: <a href="tel:+359876180505">+359 876 180 505</a></p>
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:office.dms.stz@gmail.com">office.dms.stz@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const scroller = document.querySelector(".image-scroller ul");
+            const images = Array.from(scroller.children);
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+            const closeBtn = document.querySelector(".close");
+
+            // Clone images until the total width is at least twice the screen width
+            let totalWidth = scroller.scrollWidth;
+            while (totalWidth < window.innerWidth * 2) {
+                images.forEach(img => {
+                    const clone = img.cloneNode(true);
+                    scroller.appendChild(clone);
+                });
+                totalWidth = scroller.scrollWidth;
+            }
+
+            let speed = 0.5; // Adjust scrolling speed
+            let position = 0;
+            let isPaused = false; // Pause control
+
+            function scrollImages() {
+                if (!isPaused) {
+                    position -= speed;
+                    if (Math.abs(position) >= scroller.scrollWidth / 2) {
+                        position = 0; // Reset position when first set of images is out
+                    }
+                    scroller.style.transform = `translateX(${position}px)`;
+                }
+                requestAnimationFrame(scrollImages);
+            }
+
+            scrollImages();
+
+            // Pause scrolling when hovering
+            scroller.addEventListener("mouseenter", () => (isPaused = true));
+            scroller.addEventListener("mouseleave", () => (isPaused = false));
+
+            // Open lightbox on image click
+            document.querySelectorAll(".image-scroller img").forEach(img => {
+                img.addEventListener("click", function () {
+                    lightbox.style.display = "flex";
+                    lightboxImg.src = this.src;
+                });
+            });
+
+            // Close lightbox on clicking close button or outside the image
+            closeBtn.addEventListener("click", () => (lightbox.style.display = "none"));
+            lightbox.addEventListener("click", (e) => {
+                if (e.target === lightbox) lightbox.style.display = "none";
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Smooth scroll to the bottom of the previous section when clicking the menu
+            $("a.menus").on("click", function(event) {
+                event.preventDefault(); // Prevent default anchor click behavior
+                
+                // Get the target section's ID from the href attribute
+                var target = $(this).attr("href");
+                
+                // Find the previous section before the target section
+                var previousSection = $(target).prev();
+
+                // If there's a previous section, scroll to the bottom of it
+                if (previousSection.length) {
+                    $('html, body').animate({
+                        scrollTop: previousSection.offset().top + previousSection.outerHeight()
+                    }, 1000); // Adjust the scroll speed (in milliseconds)
+                } else {
+                    // If there is no previous section, just scroll to the top
+                    $('html, body').animate({
+                        scrollTop: 0
+                    }, 1000);
+                }
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a.menus").on("click", function (event) {
+                var target = $(this).attr("href");
+
+                // Allow navigation to other HTML pages
+                if (target.endsWith(".html")) {
+                    return; // Let the browser handle it
+                }
+                
+                if (target === "#") {
+                    // Scroll to the top of the page for "Home"
+                    $("html, body").animate(
+                        { scrollTop: 0 }, 
+                        800 // Smooth scroll animation
+                    );
+                } else {
+                    var section = $(target);
+                    if (section.length) {
+                        var offset = target === "#about" ? 0 : $(window).height() * 0.1; // Adjust offset if needed
+                        
+                        $("html, body").animate(
+                            { scrollTop: section.offset().top - offset }, 
+                            800
+                        );
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
